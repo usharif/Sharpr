@@ -16,26 +16,65 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p6P-Jf-R2C" customClass="CanvasView" customModule="_ition" customModuleProvider="target"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMZ-lj-w1y">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="192" id="8Tx-qe-f6c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8o2-oK-bwy">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="5KQ-4T-yfE"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                                <connections>
+                                    <action selector="indexChangedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="SlL-JC-YtU"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtV-df-hak">
+                                <state key="normal" title="Answer"/>
+                                <connections>
+                                    <action selector="answer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Bg-Rl-Wau"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="p6P-Jf-R2C" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4xg-gp-g0d"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p6P-Jf-R2C" secondAttribute="bottom" constant="8" symbolic="YES" id="PpO-eo-tLB"/>
-                            <constraint firstItem="p6P-Jf-R2C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Rnf-uU-EvB"/>
-                            <constraint firstItem="p6P-Jf-R2C" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="RyD-Oj-RVE"/>
+                            <constraint firstItem="p6P-Jf-R2C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CiJ-RI-fn3"/>
+                            <constraint firstItem="YMZ-lj-w1y" firstAttribute="leading" secondItem="p6P-Jf-R2C" secondAttribute="trailing" constant="8" symbolic="YES" id="GWS-RB-OtP"/>
+                            <constraint firstItem="p6P-Jf-R2C" firstAttribute="centerY" secondItem="gtV-df-hak" secondAttribute="centerY" id="Jib-xo-W2w"/>
+                            <constraint firstItem="YMZ-lj-w1y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="XDS-Ws-orh"/>
+                            <constraint firstAttribute="bottom" secondItem="p6P-Jf-R2C" secondAttribute="bottom" constant="20" symbolic="YES" id="Xe1-g0-QNh"/>
+                            <constraint firstItem="8o2-oK-bwy" firstAttribute="trailing" secondItem="gtV-df-hak" secondAttribute="trailing" id="bAw-4y-7o1"/>
+                            <constraint firstItem="8o2-oK-bwy" firstAttribute="top" secondItem="YMZ-lj-w1y" secondAttribute="bottom" constant="8" symbolic="YES" id="bNX-hc-WKy"/>
+                            <constraint firstItem="8o2-oK-bwy" firstAttribute="leading" secondItem="gtV-df-hak" secondAttribute="leading" id="cUG-mW-yZ2"/>
+                            <constraint firstItem="p6P-Jf-R2C" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="d0l-oq-e0K"/>
+                            <constraint firstItem="YMZ-lj-w1y" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="gDb-j1-mMl"/>
+                            <constraint firstItem="8o2-oK-bwy" firstAttribute="leading" secondItem="p6P-Jf-R2C" secondAttribute="trailing" constant="14" id="gQJ-xL-FXI"/>
+                            <constraint firstItem="YMZ-lj-w1y" firstAttribute="centerX" secondItem="8o2-oK-bwy" secondAttribute="centerX" id="rKn-tv-cGT"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="answerTitle" destination="gtV-df-hak" id="zUu-gr-mkN"/>
                         <outlet property="canvasView" destination="p6P-Jf-R2C" id="XkO-Yf-Um0"/>
+                        <outlet property="choices" destination="8o2-oK-bwy" id="qEF-Ux-uGx"/>
+                        <outlet property="questionLabel" destination="YMZ-lj-w1y" id="vPf-Tq-fMr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139.84375" y="138.8671875"/>
+            <point key="canvasLocation" x="139.453125" y="138.28125"/>
         </scene>
     </scenes>
 </document>
