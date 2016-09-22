@@ -9,17 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var canvasView: CanvasView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        canvasView.clearCanvas(false)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // Shake to clear screen
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        canvasView.clearCanvas(true)
     }
-
-
 }
 
