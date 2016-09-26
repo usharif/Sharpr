@@ -12,6 +12,8 @@ let π = CGFloat(M_PI)
 
 class CanvasView: UIImageView {
     
+    private let forceSensitivity: CGFloat = 3.0
+    
     // Parameters
     fileprivate let defaultLineWidth:CGFloat = 6
     
@@ -26,7 +28,17 @@ class CanvasView: UIImageView {
         // Draw previous image into context
         image?.draw(in: bounds)
         
-        drawStroke(context, touch: touch)
+        var touches = [UITouch]()
+        
+        if let coalescedTouches = event?.coalescedTouches(for: touch) {
+            touches = coalescedTouches
+        } else {
+            touches.append(touch)
+        }
+                
+        for touch in touches {
+            drawStroke(context, touch: touch)
+        }
         
         // Update image
         image = UIGraphicsGetImageFromCurrentImageContext()
@@ -58,7 +70,11 @@ class CanvasView: UIImageView {
     
     fileprivate func lineWidthForDrawing(_ context: CGContext?, touch: UITouch) -> CGFloat {
         
-        let lineWidth = defaultLineWidth
+        var lineWidth = defaultLineWidth
+        
+        if touch.force > 0 {
+            lineWidth = touch.force * forceSensitivity
+        }
         
         return lineWidth
     }
