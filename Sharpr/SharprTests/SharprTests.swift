@@ -1,15 +1,15 @@
 //
-//  _itionTests.swift
-//  2itionTests
+//  SharprTests.swift
+//  SharprTests
 //
 //  Created by Umair Sharif on 9/19/16.
-//  Copyright © 2016 2itionAcademy. All rights reserved.
+//  Copyright © 2016 Sharpr. All rights reserved.
 //
 
 import XCTest
-@testable import _ition
+@testable import SharprTests
 
-class _itionTests: XCTestCase {
+class SharprTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

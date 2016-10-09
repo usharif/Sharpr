@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:2ition.xcodeproj">
+      location = "self:/Users/umairsharif/Sharpr/ios-v1/2ition/Sharpr.xcodeproj">
    </FileRef>
 </Workspace>

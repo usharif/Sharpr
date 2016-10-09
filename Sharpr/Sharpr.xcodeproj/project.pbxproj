@@ -12,8 +12,10 @@
 		6199ECA01D90E274002CFA11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6199EC9E1D90E274002CFA11 /* Main.storyboard */; };
 		6199ECA21D90E274002CFA11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6199ECA11D90E274002CFA11 /* Assets.xcassets */; };
 		6199ECA51D90E274002CFA11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6199ECA31D90E274002CFA11 /* LaunchScreen.storyboard */; };
-		6199ECB01D90E274002CFA11 /* _itionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199ECAF1D90E274002CFA11 /* _itionTests.swift */; };
-		6199ECBB1D90E275002CFA11 /* _itionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199ECBA1D90E275002CFA11 /* _itionUITests.swift */; };
+		6199ECB01D90E274002CFA11 /* SharprTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199ECAF1D90E274002CFA11 /* SharprTests.swift */; };
+		6199ECBB1D90E275002CFA11 /* SharprUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199ECBA1D90E275002CFA11 /* SharprUITests.swift */; };
+		61FF3D0A1DAADADE00276940 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF3D081DAADADE00276940 /* CanvasView.swift */; };
+		61FF3D0B1DAADADE00276940 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF3D091DAADADE00276940 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +36,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6199EC971D90E274002CFA11 /* 2ition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2ition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6199EC971D90E274002CFA11 /* Sharpr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharpr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6199EC9A1D90E274002CFA11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6199EC9C1D90E274002CFA11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6199EC9F1D90E274002CFA11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6199ECA11D90E274002CFA11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6199ECA41D90E274002CFA11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6199ECA61D90E274002CFA11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6199ECAB1D90E274002CFA11 /* 2itionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2itionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6199ECAF1D90E274002CFA11 /* _itionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _itionTests.swift; sourceTree = "<group>"; };
+		6199ECAB1D90E274002CFA11 /* SharprTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharprTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6199ECAF1D90E274002CFA11 /* SharprTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharprTests.swift; sourceTree = "<group>"; };
 		6199ECB11D90E274002CFA11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6199ECB61D90E275002CFA11 /* 2itionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2itionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6199ECBA1D90E275002CFA11 /* _itionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _itionUITests.swift; sourceTree = "<group>"; };
+		6199ECB61D90E275002CFA11 /* SharprUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharprUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6199ECBA1D90E275002CFA11 /* SharprUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharprUITests.swift; sourceTree = "<group>"; };
 		6199ECBC1D90E275002CFA11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61FF3D081DAADADE00276940 /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		61FF3D091DAADADE00276940 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +81,9 @@
 		6199EC8E1D90E274002CFA11 = {
 			isa = PBXGroup;
 			children = (
-				6199EC991D90E274002CFA11 /* 2ition */,
-				6199ECAE1D90E274002CFA11 /* 2itionTests */,
-				6199ECB91D90E275002CFA11 /* 2itionUITests */,
+				6199EC991D90E274002CFA11 /* Sharpr */,
+				6199ECAE1D90E274002CFA11 /* Sharpr */,
+				6199ECB91D90E275002CFA11 /* Sharpr */,
 				6199EC981D90E274002CFA11 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,16 +91,18 @@
 		6199EC981D90E274002CFA11 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6199EC971D90E274002CFA11 /* 2ition.app */,
-				6199ECAB1D90E274002CFA11 /* 2itionTests.xctest */,
-				6199ECB61D90E275002CFA11 /* 2itionUITests.xctest */,
+				6199EC971D90E274002CFA11 /* Sharpr.app */,
+				6199ECAB1D90E274002CFA11 /* SharprTests.xctest */,
+				6199ECB61D90E275002CFA11 /* SharprUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6199EC991D90E274002CFA11 /* 2ition */ = {
+		6199EC991D90E274002CFA11 /* Sharpr */ = {
 			isa = PBXGroup;
 			children = (
+				61FF3D081DAADADE00276940 /* CanvasView.swift */,
+				61FF3D091DAADADE00276940 /* Data.swift */,
 				6199EC9A1D90E274002CFA11 /* AppDelegate.swift */,
 				6199EC9C1D90E274002CFA11 /* ViewController.swift */,
 				6199EC9E1D90E274002CFA11 /* Main.storyboard */,
@@ -104,33 +110,35 @@
 				6199ECA31D90E274002CFA11 /* LaunchScreen.storyboard */,
 				6199ECA61D90E274002CFA11 /* Info.plist */,
 			);
-			path = 2ition;
+			path = Sharpr;
 			sourceTree = "<group>";
 		};
-		6199ECAE1D90E274002CFA11 /* 2itionTests */ = {
+		6199ECAE1D90E274002CFA11 /* Sharpr */ = {
 			isa = PBXGroup;
 			children = (
-				6199ECAF1D90E274002CFA11 /* _itionTests.swift */,
+				6199ECAF1D90E274002CFA11 /* SharprTests.swift */,
 				6199ECB11D90E274002CFA11 /* Info.plist */,
 			);
-			path = 2itionTests;
+			name = Sharpr;
+			path = SharprTests;
 			sourceTree = "<group>";
 		};
-		6199ECB91D90E275002CFA11 /* 2itionUITests */ = {
+		6199ECB91D90E275002CFA11 /* Sharpr */ = {
 			isa = PBXGroup;
 			children = (
-				6199ECBA1D90E275002CFA11 /* _itionUITests.swift */,
+				6199ECBA1D90E275002CFA11 /* SharprUITests.swift */,
 				6199ECBC1D90E275002CFA11 /* Info.plist */,
 			);
-			path = 2itionUITests;
+			name = Sharpr;
+			path = SharprUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6199EC961D90E274002CFA11 /* 2ition */ = {
+		6199EC961D90E274002CFA11 /* Sharpr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6199ECBF1D90E275002CFA11 /* Build configuration list for PBXNativeTarget "2ition" */;
+			buildConfigurationList = 6199ECBF1D90E275002CFA11 /* Build configuration list for PBXNativeTarget "Sharpr" */;
 			buildPhases = (
 				6199EC931D90E274002CFA11 /* Sources */,
 				6199EC941D90E274002CFA11 /* Frameworks */,
@@ -140,14 +148,14 @@
 			);
 			dependencies = (
 			);
-			name = 2ition;
+			name = Sharpr;
 			productName = 2ition;
-			productReference = 6199EC971D90E274002CFA11 /* 2ition.app */;
+			productReference = 6199EC971D90E274002CFA11 /* Sharpr.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6199ECAA1D90E274002CFA11 /* 2itionTests */ = {
+		6199ECAA1D90E274002CFA11 /* SharprTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6199ECC21D90E275002CFA11 /* Build configuration list for PBXNativeTarget "2itionTests" */;
+			buildConfigurationList = 6199ECC21D90E275002CFA11 /* Build configuration list for PBXNativeTarget "SharprTests" */;
 			buildPhases = (
 				6199ECA71D90E274002CFA11 /* Sources */,
 				6199ECA81D90E274002CFA11 /* Frameworks */,
@@ -158,14 +166,14 @@
 			dependencies = (
 				6199ECAD1D90E274002CFA11 /* PBXTargetDependency */,
 			);
-			name = 2itionTests;
+			name = SharprTests;
 			productName = 2itionTests;
-			productReference = 6199ECAB1D90E274002CFA11 /* 2itionTests.xctest */;
+			productReference = 6199ECAB1D90E274002CFA11 /* SharprTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6199ECB51D90E275002CFA11 /* 2itionUITests */ = {
+		6199ECB51D90E275002CFA11 /* SharprUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6199ECC51D90E275002CFA11 /* Build configuration list for PBXNativeTarget "2itionUITests" */;
+			buildConfigurationList = 6199ECC51D90E275002CFA11 /* Build configuration list for PBXNativeTarget "SharprUITests" */;
 			buildPhases = (
 				6199ECB21D90E275002CFA11 /* Sources */,
 				6199ECB31D90E275002CFA11 /* Frameworks */,
@@ -176,9 +184,9 @@
 			dependencies = (
 				6199ECB81D90E275002CFA11 /* PBXTargetDependency */,
 			);
-			name = 2itionUITests;
+			name = SharprUITests;
 			productName = 2itionUITests;
-			productReference = 6199ECB61D90E275002CFA11 /* 2itionUITests.xctest */;
+			productReference = 6199ECB61D90E275002CFA11 /* SharprUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -193,6 +201,7 @@
 				TargetAttributes = {
 					6199EC961D90E274002CFA11 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = JXTYT79G8A;
 						ProvisioningStyle = Automatic;
 					};
 					6199ECAA1D90E274002CFA11 = {
@@ -207,7 +216,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6199EC921D90E274002CFA11 /* Build configuration list for PBXProject "2ition" */;
+			buildConfigurationList = 6199EC921D90E274002CFA11 /* Build configuration list for PBXProject "Sharpr" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -220,9 +229,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6199EC961D90E274002CFA11 /* 2ition */,
-				6199ECAA1D90E274002CFA11 /* 2itionTests */,
-				6199ECB51D90E275002CFA11 /* 2itionUITests */,
+				6199EC961D90E274002CFA11 /* Sharpr */,
+				6199ECAA1D90E274002CFA11 /* SharprTests */,
+				6199ECB51D90E275002CFA11 /* SharprUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -261,6 +270,8 @@
 			files = (
 				6199EC9D1D90E274002CFA11 /* ViewController.swift in Sources */,
 				6199EC9B1D90E274002CFA11 /* AppDelegate.swift in Sources */,
+				61FF3D0A1DAADADE00276940 /* CanvasView.swift in Sources */,
+				61FF3D0B1DAADADE00276940 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6199ECB01D90E274002CFA11 /* _itionTests.swift in Sources */,
+				6199ECB01D90E274002CFA11 /* SharprTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6199ECBB1D90E275002CFA11 /* _itionUITests.swift in Sources */,
+				6199ECBB1D90E275002CFA11 /* SharprUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,12 +296,12 @@
 /* Begin PBXTargetDependency section */
 		6199ECAD1D90E274002CFA11 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6199EC961D90E274002CFA11 /* 2ition */;
+			target = 6199EC961D90E274002CFA11 /* Sharpr */;
 			targetProxy = 6199ECAC1D90E274002CFA11 /* PBXContainerItemProxy */;
 		};
 		6199ECB81D90E275002CFA11 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6199EC961D90E274002CFA11 /* 2ition */;
+			target = 6199EC961D90E274002CFA11 /* Sharpr */;
 			targetProxy = 6199ECB71D90E275002CFA11 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -412,9 +423,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = 2ition/Info.plist;
+				DEVELOPMENT_TEAM = JXTYT79G8A;
+				INFOPLIST_FILE = Sharpr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.2itionAcademy.-ition";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sharpr.Sharpr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -424,9 +436,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = 2ition/Info.plist;
+				DEVELOPMENT_TEAM = JXTYT79G8A;
+				INFOPLIST_FILE = Sharpr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.2itionAcademy.-ition";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sharpr.Sharpr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -437,12 +450,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = 2itionTests/Info.plist;
+				INFOPLIST_FILE = SharprTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.2itionAcademy.-itionTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sharpr.SharprTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2ition.app/2ition";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sharpr.app/Sharpr";
 			};
 			name = Debug;
 		};
@@ -451,12 +464,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = 2itionTests/Info.plist;
+				INFOPLIST_FILE = SharprTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.2itionAcademy.-itionTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sharpr.SharprTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2ition.app/2ition";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sharpr.app/Sharpr";
 			};
 			name = Release;
 		};
@@ -464,12 +477,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = 2itionUITests/Info.plist;
+				INFOPLIST_FILE = SharprUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.2itionAcademy.-itionUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sharpr.SharprUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = 2ition;
+				TEST_TARGET_NAME = Sharpr;
 			};
 			name = Debug;
 		};
@@ -477,19 +490,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = 2itionUITests/Info.plist;
+				INFOPLIST_FILE = SharprUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.2itionAcademy.-itionUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sharpr.SharprUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = 2ition;
+				TEST_TARGET_NAME = Sharpr;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6199EC921D90E274002CFA11 /* Build configuration list for PBXProject "2ition" */ = {
+		6199EC921D90E274002CFA11 /* Build configuration list for PBXProject "Sharpr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6199ECBD1D90E275002CFA11 /* Debug */,
@@ -498,29 +511,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6199ECBF1D90E275002CFA11 /* Build configuration list for PBXNativeTarget "2ition" */ = {
+		6199ECBF1D90E275002CFA11 /* Build configuration list for PBXNativeTarget "Sharpr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6199ECC01D90E275002CFA11 /* Debug */,
 				6199ECC11D90E275002CFA11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		6199ECC21D90E275002CFA11 /* Build configuration list for PBXNativeTarget "2itionTests" */ = {
+		6199ECC21D90E275002CFA11 /* Build configuration list for PBXNativeTarget "SharprTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6199ECC31D90E275002CFA11 /* Debug */,
 				6199ECC41D90E275002CFA11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		6199ECC51D90E275002CFA11 /* Build configuration list for PBXNativeTarget "2itionUITests" */ = {
+		6199ECC51D90E275002CFA11 /* Build configuration list for PBXNativeTarget "SharprUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6199ECC61D90E275002CFA11 /* Debug */,
 				6199ECC71D90E275002CFA11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

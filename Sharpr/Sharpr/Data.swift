@@ -1,9 +1,9 @@
 //
 //  Data.swift
-//  2ition
+//  Sharpr
 //
 //  Created by Umair Sharif on 9/22/16.
-//  Copyright © 2016 2itionAcademy. All rights reserved.
+//  Copyright © 2016 Sharpr. All rights reserved.
 //
 
 import Foundation

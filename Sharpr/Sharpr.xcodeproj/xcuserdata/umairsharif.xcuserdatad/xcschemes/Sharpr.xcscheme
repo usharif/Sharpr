@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6199EC961D90E274002CFA11"
-               BuildableName = "2ition.app"
-               BlueprintName = "2ition"
-               ReferencedContainer = "container:2ition.xcodeproj">
+               BuildableName = "Sharpr.app"
+               BlueprintName = "Sharpr"
+               ReferencedContainer = "container:Sharpr.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6199ECAA1D90E274002CFA11"
-               BuildableName = "2itionTests.xctest"
-               BlueprintName = "2itionTests"
-               ReferencedContainer = "container:2ition.xcodeproj">
+               BuildableName = "SharprTests.xctest"
+               BlueprintName = "SharprTests"
+               ReferencedContainer = "container:Sharpr.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6199ECB51D90E275002CFA11"
-               BuildableName = "2itionUITests.xctest"
-               BlueprintName = "2itionUITests"
-               ReferencedContainer = "container:2ition.xcodeproj">
+               BuildableName = "SharprUITests.xctest"
+               BlueprintName = "SharprUITests"
+               ReferencedContainer = "container:Sharpr.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6199EC961D90E274002CFA11"
-            BuildableName = "2ition.app"
-            BlueprintName = "2ition"
-            ReferencedContainer = "container:2ition.xcodeproj">
+            BuildableName = "Sharpr.app"
+            BlueprintName = "Sharpr"
+            ReferencedContainer = "container:Sharpr.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6199EC961D90E274002CFA11"
-            BuildableName = "2ition.app"
-            BlueprintName = "2ition"
-            ReferencedContainer = "container:2ition.xcodeproj">
+            BuildableName = "Sharpr.app"
+            BlueprintName = "Sharpr"
+            ReferencedContainer = "container:Sharpr.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6199EC961D90E274002CFA11"
-            BuildableName = "2ition.app"
-            BlueprintName = "2ition"
-            ReferencedContainer = "container:2ition.xcodeproj">
+            BuildableName = "Sharpr.app"
+            BlueprintName = "Sharpr"
+            ReferencedContainer = "container:Sharpr.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
