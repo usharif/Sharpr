@@ -82,8 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				6199EC991D90E274002CFA11 /* Sharpr */,
-				6199ECAE1D90E274002CFA11 /* Sharpr */,
-				6199ECB91D90E275002CFA11 /* Sharpr */,
+				6199ECAE1D90E274002CFA11 /* SharprTests */,
+				6199ECB91D90E275002CFA11 /* SharprUITests */,
 				6199EC981D90E274002CFA11 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,23 +113,21 @@
 			path = Sharpr;
 			sourceTree = "<group>";
 		};
-		6199ECAE1D90E274002CFA11 /* Sharpr */ = {
+		6199ECAE1D90E274002CFA11 /* SharprTests */ = {
 			isa = PBXGroup;
 			children = (
 				6199ECAF1D90E274002CFA11 /* SharprTests.swift */,
 				6199ECB11D90E274002CFA11 /* Info.plist */,
 			);
-			name = Sharpr;
 			path = SharprTests;
 			sourceTree = "<group>";
 		};
-		6199ECB91D90E275002CFA11 /* Sharpr */ = {
+		6199ECB91D90E275002CFA11 /* SharprUITests */ = {
 			isa = PBXGroup;
 			children = (
 				6199ECBA1D90E275002CFA11 /* SharprUITests.swift */,
 				6199ECBC1D90E275002CFA11 /* Info.plist */,
 			);
-			name = Sharpr;
 			path = SharprUITests;
 			sourceTree = "<group>";
 		};
