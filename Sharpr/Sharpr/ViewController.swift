@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import ReplayKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, RPPreviewViewControllerDelegate {
     
     let dataRepo = Data.init()
     
@@ -56,6 +57,19 @@ class ViewController: UIViewController {
             })
         } else {
             self.present(incorrectAnswerAlert, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func startRec(_ sender: AnyObject) {
+        let recorder = RPScreenRecorder.shared()
+        recorder.startRecording(withMicrophoneEnabled: true, handler: nil)
+    }
+    
+    @IBAction func endRec(_ sender: AnyObject) {
+        let recorder = RPScreenRecorder.shared()
+        recorder.stopRecording { (preview, error) in
+            preview?.popoverPresentationController?.sourceView = self.view
+            self.present(preview!, animated: true)
         }
     }
     
