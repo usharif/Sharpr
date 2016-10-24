@@ -24,20 +24,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let leftView = storyboard?.instantiateViewController(withIdentifier: "HelpViewController")
         let mainView = storyboard?.instantiateViewController(withIdentifier: "MainViewController")
-        let controller = DualSlideMenuViewController(mainViewController: mainView!, leftMenuViewController: leftView!)
+        controller = DualSlideMenuViewController(mainViewController: mainView!, leftMenuViewController: leftView!)
+        
+        let closeButton = UIButton(frame: CGRect(x: 140, y: (leftView?.view.bounds.height)! - 50, width: 10, height: 10))
+        closeButton.setTitle("Close", for: .normal)
+        closeButton.setTitleColor(UIColor.blue, for: .normal)
+        closeButton.sizeToFit()
+        closeButton.addTarget(self, action: #selector(AppDelegate.closeButtonTapped(sender:)), for: .touchUpInside)
+        leftView?.view.addSubview(closeButton)
+        
+        let helpButton = UIButton(frame: CGRect(x: 30, y: 30, width: 10, height: 10))
+        helpButton.setTitle("Help", for: .normal)
+        helpButton.setTitleColor(UIColor.blue, for: .normal)
+        helpButton.sizeToFit()
+        helpButton.addTarget(self, action: #selector(AppDelegate.helpButtonTapped(sender:)), for: .touchUpInside)
+        mainView?.view.addSubview(helpButton)
         
         window!.rootViewController = controller
         window!.makeKeyAndVisible()
         
-        controller.leftSideOffset = 700
-        controller.toMain()
-        controller.addSwipeGestureInSide(viewController: leftView!, direction: .left)
+        controller!.leftSideOffset = 700
+        controller!.addSwipeGestureInSide(viewController: leftView!, direction: .left)
         
         return true
     }
     
-    func helpButtonTapped(sender: UIButton){
-        controller?.toggle(swipeDirection: "right")
+    func closeButtonTapped(sender: UIButton) {
+        controller!.toggle(swipeDirection: "left")
+    }
+    
+    func helpButtonTapped(sender: UIButton) {
+        controller!.toggle(swipeDirection: "right")
     }
 
 }
