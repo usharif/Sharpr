@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Beb-h0-6Ak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Beb-h0-6Ak">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,18 +35,30 @@
                         <viewControllerLayoutGuide type="top" id="Wfk-6J-tIA"/>
                         <viewControllerLayoutGuide type="bottom" id="mQi-3c-HgF"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yuz-uS-vd7" customClass="MAWMathView">
+                    <view key="view" contentMode="scaleToFill" id="yuz-uS-vd7">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oyi-MD-ytG" customClass="MAWMathView">
+                                <rect key="frame" x="0.0" y="590" width="1024" height="178"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Oyi-MD-ytG" firstAttribute="top" secondItem="Wfk-6J-tIA" secondAttribute="bottom" constant="570" id="6s3-77-Fih"/>
+                            <constraint firstItem="Oyi-MD-ytG" firstAttribute="leading" secondItem="yuz-uS-vd7" secondAttribute="leading" id="E6f-SZ-yL6"/>
+                            <constraint firstItem="Oyi-MD-ytG" firstAttribute="bottom" secondItem="mQi-3c-HgF" secondAttribute="top" id="E6h-04-oNf"/>
+                            <constraint firstAttribute="trailing" secondItem="Oyi-MD-ytG" secondAttribute="trailing" id="jfc-es-TNC"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="mathView" destination="yuz-uS-vd7" id="ac7-9o-ESV"/>
+                        <outlet property="mathView" destination="Oyi-MD-ytG" id="m4v-dL-dec"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7EX-tr-O1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5" y="63"/>
+            <point key="canvasLocation" x="-5.2734375" y="62.5"/>
         </scene>
     </scenes>
 </document>
