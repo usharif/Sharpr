@@ -23,15 +23,25 @@ class MasterViewController: UIViewController {
     }
     
     @IBAction func resultAsImageButton(_ sender: Any) {
-        resultImageView.image = mathView?.resultAsImage()
+        //create and NSTextAttachment and add your image to it.
+        let attachment = NSTextAttachment()
+        attachment.image = mathView?.resultAsImage()
+        
+        //put your NSTextAttachment into and attributedString
+        let attString = NSAttributedString(attachment: attachment)
+        
+        //add this attributed string to the current position.
+        resultTextView.textStorage.insert(attString, at: resultTextView.selectedRange.location)
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let childVC = childViewControllers[0]
         mathView = childVC.view as! MAWMathView?
+        
+        //sets the beautificationOption
+        mathView?.beautificationOption = .fontify
         
     }
 

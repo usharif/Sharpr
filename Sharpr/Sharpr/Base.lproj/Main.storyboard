@@ -97,6 +97,10 @@
         <scene sceneID="tbw-gP-gr1">
             <objects>
                 <viewController id="CjQ-TS-tej" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lS4-Zy-jrG"/>
+                        <viewControllerLayoutGuide type="bottom" id="zku-bd-Z1q"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7Yk-sp-IxY" customClass="MAWMathView">
                         <rect key="frame" x="0.0" y="0.0" width="984" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
