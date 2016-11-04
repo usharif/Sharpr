@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="-700" y="63"/>
         </scene>
-        <!--View Controller-->
+        <!--Master View Controller-->
         <scene sceneID="auv-ao-drv">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="Beb-h0-6Ak" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="Beb-h0-6Ak" customClass="MasterViewController" customModule="Sharpr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wfk-6J-tIA"/>
                         <viewControllerLayoutGuide type="bottom" id="mQi-3c-HgF"/>
@@ -39,26 +39,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oyi-MD-ytG" customClass="MAWMathView">
-                                <rect key="frame" x="0.0" y="590" width="1024" height="178"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zg4-Vp-7ZS">
+                                <rect key="frame" x="20" y="620" width="984" height="128"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="CjQ-TS-tej" kind="embed" id="6Sh-Vp-GhD"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0S-45-DLf">
+                                <rect key="frame" x="952" y="28" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add text"/>
+                                <connections>
+                                    <action selector="resultAsTextButton:" destination="Beb-h0-6Ak" eventType="touchUpInside" id="hb0-04-Oem"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hqC-5t-swh">
+                                <rect key="frame" x="77" y="70" width="872" height="303"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YB0-nT-j0U">
+                                <rect key="frame" x="891" y="582" width="113" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clear writing bar"/>
+                                <connections>
+                                    <action selector="clearTextButton:" destination="Beb-h0-6Ak" eventType="touchUpInside" id="hbi-L5-NWi"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HDy-M0-3dm">
+                                <rect key="frame" x="20" y="381" width="860" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFQ-Z4-jEP">
+                                <rect key="frame" x="921" y="482" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Make image"/>
+                                <connections>
+                                    <action selector="resultAsImageButton:" destination="Beb-h0-6Ak" eventType="touchUpInside" id="syI-LZ-IQ3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Oyi-MD-ytG" firstAttribute="top" secondItem="Wfk-6J-tIA" secondAttribute="bottom" constant="570" id="6s3-77-Fih"/>
-                            <constraint firstItem="Oyi-MD-ytG" firstAttribute="leading" secondItem="yuz-uS-vd7" secondAttribute="leading" id="E6f-SZ-yL6"/>
-                            <constraint firstItem="Oyi-MD-ytG" firstAttribute="bottom" secondItem="mQi-3c-HgF" secondAttribute="top" id="E6h-04-oNf"/>
-                            <constraint firstAttribute="trailing" secondItem="Oyi-MD-ytG" secondAttribute="trailing" id="jfc-es-TNC"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="mathView" destination="Oyi-MD-ytG" id="m4v-dL-dec"/>
+                        <outlet property="resultImageView" destination="HDy-M0-3dm" id="JOG-CL-cEC"/>
+                        <outlet property="resultTextView" destination="hqC-5t-swh" id="eMh-Ny-FCq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7EX-tr-O1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5.2734375" y="62.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tbw-gP-gr1">
+            <objects>
+                <viewController id="CjQ-TS-tej" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Yk-sp-IxY" customClass="MAWMathView">
+                        <rect key="frame" x="0.0" y="0.0" width="984" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mathView" destination="7Yk-sp-IxY" id="QTI-BF-C7q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HwQ-g1-iVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5" y="502"/>
         </scene>
     </scenes>
 </document>
