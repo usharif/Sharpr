@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import DualSlideMenu
 
 class HelpViewController: UIViewController {
     

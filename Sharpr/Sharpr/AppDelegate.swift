@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import DualSlideMenu
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
