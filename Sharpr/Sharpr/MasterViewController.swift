@@ -12,7 +12,6 @@ class MasterViewController: UIViewController {
     var mathView: MAWMathView?
     
     @IBOutlet weak var resultTextView: UITextView!
-    @IBOutlet weak var resultImageView: UIImageView!
 
     @IBAction func resultAsTextButton(_ sender: Any) {
         resultTextView.text = resultTextView.text.appending((mathView?.resultAsText())!)
@@ -32,6 +31,10 @@ class MasterViewController: UIViewController {
         
         //add this attributed string to the current position.
         resultTextView.textStorage.insert(attString, at: resultTextView.selectedRange.location)
+    }
+    
+    @IBAction func doneButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
