@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MzU-rK-oH4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5vo-R1-VT0">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,106 +19,38 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="LNT-K4-cGr" kind="relationship" relationship="viewControllers" id="cFt-fd-oVx"/>
-                        <segue destination="ue9-S8-G3b" kind="relationship" relationship="viewControllers" id="tKE-DD-Wwh"/>
-                        <segue destination="K8L-cQ-cHu" kind="relationship" relationship="viewControllers" id="70z-BV-omt"/>
+                        <segue destination="9ec-SO-f2u" kind="relationship" relationship="viewControllers" id="PYg-aW-xtF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DcS-Do-cTj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1423" y="219"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="8pX-XY-C0x">
-            <objects>
-                <viewController id="MzU-rK-oH4" customClass="SLViewController" customModule="Sharpr" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yBI-gU-Qhp"/>
-                        <viewControllerLayoutGuide type="bottom" id="9kD-42-hBn"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TQ1-TX-LyB">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vk1-yS-npw">
-                                <rect key="frame" x="0.0" y="547" width="1024" height="201"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="5XY-il-CFh" kind="embed" id="LvT-Z0-yKl"/>
-                                </connections>
-                            </containerView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hOZ-pM-QhL">
-                                <rect key="frame" x="392" y="95" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dib-0h-vkf">
-                                <rect key="frame" x="830" y="369" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="makeText:" destination="MzU-rK-oH4" eventType="touchUpInside" id="sYZ-QX-tmW"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="textOutlet" destination="hOZ-pM-QhL" id="lQ2-Na-dHF"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mrC-cU-GZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1423.2421875" y="997.65625"/>
-        </scene>
-        <!--Class-->
-        <scene sceneID="DeE-T7-oug">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Class" id="LNT-K4-cGr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="p0a-9g-b1F"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="byQ-fT-rE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-964" y="125"/>
-        </scene>
-        <!--Activity-->
-        <scene sceneID="Iqr-B7-XLo">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Activity" id="ue9-S8-G3b" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Zsg-L9-w1U"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tcc-74-o6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-964" y="219"/>
-        </scene>
         <!--Student-->
-        <scene sceneID="3Sj-Va-80m">
+        <scene sceneID="xXe-cA-Lsm">
             <objects>
-                <viewControllerPlaceholder storyboardName="Student" id="K8L-cQ-cHu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="rp0-4n-uTL"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ce9-6K-PVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Student" id="i1f-ja-o7T" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wve-jz-ZPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-969" y="320"/>
+            <point key="canvasLocation" x="-955" y="275"/>
         </scene>
-        <!--Single Line View Controller-->
-        <scene sceneID="gAm-sg-vht">
+        <!--Module-->
+        <scene sceneID="htr-DN-1xh">
             <objects>
-                <viewController id="5XY-il-CFh" customClass="SingleLineViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Oav-xd-tHz" customClass="SLTWSingleLineWidget">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="201"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="singleLineWidget" destination="Oav-xd-tHz" id="WS3-MZ-F0s"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RlF-eF-ldB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Module" id="m6U-Fi-zD2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahN-Co-8mT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1423" y="1458"/>
+            <point key="canvasLocation" x="-958" y="77"/>
+        </scene>
+        <!--Lesson-->
+        <scene sceneID="4a4-lb-1Mk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Lesson" id="9ec-SO-f2u" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="HX0-6y-bD7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQg-1w-xZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-954" y="172"/>
         </scene>
     </scenes>
 </document>

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		61312B8E1DCD8F3D006A917A /* Class.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61312B8D1DCD8F3D006A917A /* Class.storyboard */; };
+		61312B8E1DCD8F3D006A917A /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61312B8D1DCD8F3D006A917A /* Lesson.storyboard */; };
 		6133EBFF1DDD4EAC00EBE0C9 /* ModuleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6133EBFE1DDD4EAC00EBE0C9 /* ModuleCollectionViewController.swift */; };
 		6153484C1DC070430027479D /* ATKMathWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6153484B1DC070430027479D /* ATKMathWidget.framework */; };
 		6153484E1DC070500027479D /* ATKMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6153484D1DC070500027479D /* ATKMath.framework */; };
@@ -21,14 +21,13 @@
 		617C91FD1DDD574D00314301 /* ATKText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 617C91FA1DDD574D00314301 /* ATKText.framework */; };
 		617C92001DDD6C9300314301 /* SingleLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 617C91FF1DDD6C9300314301 /* SingleLineViewController.m */; };
 		617C92021DDD73DC00314301 /* ATKIMCommonResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 617C92011DDD73DC00314301 /* ATKIMCommonResources.bundle */; };
-		6184FEF01DCEEB0200A101B0 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6184FEEE1DCEEB0200A101B0 /* Activity.storyboard */; };
+		6184FEF01DCEEB0200A101B0 /* Module.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6184FEEE1DCEEB0200A101B0 /* Module.storyboard */; };
 		6184FEF21DCEEBE600A101B0 /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6184FEF11DCEEBE600A101B0 /* Student.storyboard */; };
-		618C766D1DCAC57A00DE3581 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C766C1DCAC57A00DE3581 /* MasterViewController.swift */; };
+		618C766D1DCAC57A00DE3581 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C766C1DCAC57A00DE3581 /* LessonViewController.swift */; };
 		6199EC9B1D90E274002CFA11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199EC9A1D90E274002CFA11 /* AppDelegate.swift */; };
 		6199ECA01D90E274002CFA11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6199EC9E1D90E274002CFA11 /* Main.storyboard */; };
 		6199ECA21D90E274002CFA11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6199ECA11D90E274002CFA11 /* Assets.xcassets */; };
 		6199ECA51D90E274002CFA11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6199ECA31D90E274002CFA11 /* LaunchScreen.storyboard */; };
-		61A5D3CC1DDD7BAE00AD64A2 /* SLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5D3CB1DDD7BAE00AD64A2 /* SLViewController.swift */; };
 		61DA71941DC1B7A4006E4CBB /* com.Sharpr.Sharpr.c in Sources */ = {isa = PBXBuildFile; fileRef = 61DA71931DC1B7A4006E4CBB /* com.Sharpr.Sharpr.c */; };
 		61FF3D0A1DAADADE00276940 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF3D081DAADADE00276940 /* CanvasView.swift */; };
 /* End PBXBuildFile section */
@@ -51,7 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		61312B8D1DCD8F3D006A917A /* Class.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Class.storyboard; sourceTree = "<group>"; };
+		61312B8D1DCD8F3D006A917A /* Lesson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lesson.storyboard; sourceTree = "<group>"; };
 		6133EBFE1DDD4EAC00EBE0C9 /* ModuleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleCollectionViewController.swift; sourceTree = "<group>"; };
 		6153484B1DC070430027479D /* ATKMathWidget.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ATKMathWidget.framework; path = "../../../MyScript_ATK-ios-2.2/Frameworks/ATKMathWidget.framework"; sourceTree = "<group>"; };
 		6153484D1DC070500027479D /* ATKMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ATKMath.framework; path = "../../../MyScript_ATK-ios-2.2/Frameworks/ATKMath.framework"; sourceTree = "<group>"; };
@@ -68,9 +67,9 @@
 		617C91FE1DDD6C9300314301 /* SingleLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLineViewController.h; sourceTree = "<group>"; };
 		617C91FF1DDD6C9300314301 /* SingleLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleLineViewController.m; sourceTree = "<group>"; };
 		617C92011DDD73DC00314301 /* ATKIMCommonResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ATKIMCommonResources.bundle; sourceTree = "<group>"; };
-		6184FEEF1DCEEB0200A101B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Activity.storyboard; sourceTree = "<group>"; };
+		6184FEEF1DCEEB0200A101B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Module.storyboard; sourceTree = "<group>"; };
 		6184FEF11DCEEBE600A101B0 /* Student.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Student.storyboard; sourceTree = "<group>"; };
-		618C766C1DCAC57A00DE3581 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		618C766C1DCAC57A00DE3581 /* LessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
 		6199EC971D90E274002CFA11 /* Sharpr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharpr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6199EC9A1D90E274002CFA11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6199EC9F1D90E274002CFA11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,7 +78,6 @@
 		6199ECA61D90E274002CFA11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6199ECAB1D90E274002CFA11 /* SharprTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharprTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6199ECB61D90E275002CFA11 /* SharprUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharprUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		61A5D3CB1DDD7BAE00AD64A2 /* SLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLViewController.swift; sourceTree = "<group>"; };
 		61DA71911DC1B5DF006E4CBB /* MyCertificate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCertificate.h; sourceTree = "<group>"; };
 		61DA71931DC1B7A4006E4CBB /* com.Sharpr.Sharpr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = com.Sharpr.Sharpr.c; sourceTree = "<group>"; };
 		61FF3D081DAADADE00276940 /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
@@ -131,6 +129,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6151DCB61DE2670A00740E66 /* Lesson */ = {
+			isa = PBXGroup;
+			children = (
+				61312B8D1DCD8F3D006A917A /* Lesson.storyboard */,
+				618C766C1DCAC57A00DE3581 /* LessonViewController.swift */,
+			);
+			name = Lesson;
+			sourceTree = "<group>";
+		};
 		617C92041DDD79DE00314301 /* MyScriptATK */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,12 +179,10 @@
 				61FF3D081DAADADE00276940 /* CanvasView.swift */,
 				6199EC9A1D90E274002CFA11 /* AppDelegate.swift */,
 				6199EC9E1D90E274002CFA11 /* Main.storyboard */,
-				61A5D3C81DDD7A2F00AD64A2 /* Student */,
 				61A5D3C91DDD7A4F00AD64A2 /* Module */,
-				61312B8D1DCD8F3D006A917A /* Class.storyboard */,
+				6151DCB61DE2670A00740E66 /* Lesson */,
+				61A5D3C81DDD7A2F00AD64A2 /* Student */,
 				6199ECA31D90E274002CFA11 /* LaunchScreen.storyboard */,
-				618C766C1DCAC57A00DE3581 /* MasterViewController.swift */,
-				61A5D3CB1DDD7BAE00AD64A2 /* SLViewController.swift */,
 			);
 			path = Sharpr;
 			sourceTree = "<group>";
@@ -193,7 +198,7 @@
 		61A5D3C91DDD7A4F00AD64A2 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				6184FEEE1DCEEB0200A101B0 /* Activity.storyboard */,
+				6184FEEE1DCEEB0200A101B0 /* Module.storyboard */,
 				6133EBFE1DDD4EAC00EBE0C9 /* ModuleCollectionViewController.swift */,
 			);
 			name = Module;
@@ -329,10 +334,10 @@
 				617C92021DDD73DC00314301 /* ATKIMCommonResources.bundle in Resources */,
 				6184FEF21DCEEBE600A101B0 /* Student.storyboard in Resources */,
 				615348561DC071170027479D /* resources.bundle in Resources */,
-				61312B8E1DCD8F3D006A917A /* Class.storyboard in Resources */,
+				61312B8E1DCD8F3D006A917A /* Lesson.storyboard in Resources */,
 				615348541DC070DD0027479D /* ATKMathWidget.bundle in Resources */,
 				6199ECA51D90E274002CFA11 /* LaunchScreen.storyboard in Resources */,
-				6184FEF01DCEEB0200A101B0 /* Activity.storyboard in Resources */,
+				6184FEF01DCEEB0200A101B0 /* Module.storyboard in Resources */,
 				6199ECA21D90E274002CFA11 /* Assets.xcassets in Resources */,
 				6199ECA01D90E274002CFA11 /* Main.storyboard in Resources */,
 			);
@@ -456,10 +461,9 @@
 				61DA71941DC1B7A4006E4CBB /* com.Sharpr.Sharpr.c in Sources */,
 				6199EC9B1D90E274002CFA11 /* AppDelegate.swift in Sources */,
 				617C92001DDD6C9300314301 /* SingleLineViewController.m in Sources */,
-				618C766D1DCAC57A00DE3581 /* MasterViewController.swift in Sources */,
+				618C766D1DCAC57A00DE3581 /* LessonViewController.swift in Sources */,
 				61FF3D0A1DAADADE00276940 /* CanvasView.swift in Sources */,
 				6153485A1DC1A9A20027479D /* ViewController.m in Sources */,
-				61A5D3CC1DDD7BAE00AD64A2 /* SLViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,12 +497,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6184FEEE1DCEEB0200A101B0 /* Activity.storyboard */ = {
+		6184FEEE1DCEEB0200A101B0 /* Module.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6184FEEF1DCEEB0200A101B0 /* Base */,
 			);
-			name = Activity.storyboard;
+			name = Module.storyboard;
 			sourceTree = "<group>";
 		};
 		6199EC9E1D90E274002CFA11 /* Main.storyboard */ = {

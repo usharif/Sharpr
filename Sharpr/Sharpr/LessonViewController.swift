@@ -1,24 +1,22 @@
 //
-//  MasterViewController.swift
+//  LessonViewController.swift
 //  Sharpr
 //
-//  Created by Umair Sharif on 11/2/16.
+//  Created by Umair Sharif on 11/20/16.
 //  Copyright © 2016 2itionAcademy. All rights reserved.
 //
 
 import UIKit
 
-class MasterViewController: UIViewController {
+class LessonViewController: UIViewController, SLTWSingleLineWidgetDelegate {
     var mathView: MAWMathView?
+    var singleLineView: SLTWSingleLineWidget?
     
     @IBOutlet weak var resultTextView: UITextView!
-
-    @IBAction func resultAsTextButton(_ sender: Any) {
-        resultTextView.text = resultTextView.text.appending((mathView?.resultAsText())!)
-    }
     
     @IBAction func clearTextButton(_ sender: Any) {
         mathView?.clear(true)
+        singleLineView?.clear()
     }
     
     @IBAction func resultAsImageButton(_ sender: Any) {
@@ -30,7 +28,8 @@ class MasterViewController: UIViewController {
         let attString = NSAttributedString(attachment: attachment)
         
         //add this attributed string to the current position.
-        resultTextView.textStorage.insert(attString, at: resultTextView.selectedRange.location)
+        resultTextView.textStorage.insert(attString, at: resultTextView.selectedRange.length)
+        //resultTextView.textStorage.append(attString)
     }
     
     @IBAction func doneButton(_ sender: Any) {
@@ -40,12 +39,22 @@ class MasterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let childVC = childViewControllers[0]
-        mathView = childVC.view as! MAWMathView?
+        let singleLineViewChildVC = childViewControllers[0]
+        singleLineView = singleLineViewChildVC.view as! SLTWSingleLineWidget?
         
-        //sets the beautificationOption
+        let mathViewChildVC = childViewControllers[1]
+        mathView = mathViewChildVC.view as! MAWMathView?
+        
+        //sets the beautificationOption on mathView
         mathView?.beautificationOption = .fontify
         
+        //set the singleLineView delegate
+        singleLineView?.delegate = self
+        
+    }
+    
+    func singleLineWidget(_ sender: SLTWSingleLineWidget!, didChangeText text: String!, intermediate: Bool) {
+        resultTextView.text = text
     }
 
     override func didReceiveMemoryWarning() {
