@@ -33,7 +33,30 @@ class LessonViewController: UIViewController, SLTWSingleLineWidgetDelegate {
     }
     
     @IBAction func doneButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        let doneAction = UIAlertController(title: "Name required", message: "Please name your lesson", preferredStyle: .alert)
+        doneAction.addTextField(configurationHandler: nil)
+        doneAction.addAction(UIAlertAction(title: "Ok", style: .default,
+                                           handler: {_ in self.dismiss(animated: true,
+                                                                       completion: {self.saveLesson(name: doneAction.textFields![0].text!)})}))
+        doneAction.addAction(UIAlertAction(title: "Cancel", style: .cancel,
+                                           handler: {_ in doneAction.dismiss(animated: true, completion: nil)}))
+        
+        present(doneAction, animated: true, completion: nil)
+    }
+    
+    func saveLesson(name: String) {
+        let renderer = UIGraphicsImageRenderer(size: resultTextView.bounds.size)
+        let image = renderer.image { ctx in
+            resultTextView.drawHierarchy(in: resultTextView.bounds, afterScreenUpdates: true)
+        }
+        
+        if let data = UIImagePNGRepresentation(image) {
+            let filename = getDocumentsDirectory().appendingPathComponent(name)
+            try? data.write(to: filename)
+            print(filename)
+        }
+//        Lessons.list.append(name)
+
     }
     
     override func viewDidLoad() {
@@ -56,9 +79,15 @@ class LessonViewController: UIViewController, SLTWSingleLineWidgetDelegate {
     func singleLineWidget(_ sender: SLTWSingleLineWidget!, didChangeText text: String!, intermediate: Bool) {
         resultTextView.text = text
     }
-
+    
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
 }
