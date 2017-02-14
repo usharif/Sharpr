@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6133EBFF1DDD4EAC00EBE0C9 /* ModuleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6133EBFE1DDD4EAC00EBE0C9 /* ModuleCollectionViewController.swift */; };
+		613613C41E52BA1700211BB6 /* com.sharperapp.sharpr.c in Sources */ = {isa = PBXBuildFile; fileRef = 613613C31E52BA1700211BB6 /* com.sharperapp.sharpr.c */; };
 		6153484C1DC070430027479D /* ATKMathWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6153484B1DC070430027479D /* ATKMathWidget.framework */; };
 		6153484E1DC070500027479D /* ATKMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6153484D1DC070500027479D /* ATKMath.framework */; };
 		615348501DC0705C0027479D /* ATKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6153484F1DC0705C0027479D /* ATKCore.framework */; };
@@ -31,7 +32,6 @@
 		619FC5B41E36E956002FE54D /* Subject.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619FC5B21E36E956002FE54D /* Subject.storyboard */; };
 		619FC5B91E36E9F6002FE54D /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619FC5B71E36E9F6002FE54D /* Lesson.storyboard */; };
 		619FC5BB1E36F429002FE54D /* QuestionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619FC5BA1E36F429002FE54D /* QuestionTableViewController.swift */; };
-		619FC5BF1E370A75002FE54D /* com.sharperapp.Sharpr.c in Sources */ = {isa = PBXBuildFile; fileRef = 619FC5BE1E370A75002FE54D /* com.sharperapp.Sharpr.c */; };
 		61AAD2CE1E12211400FC01E8 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AAD2CD1E12211400FC01E8 /* Question.swift */; };
 		61AAD2D01E12241D00FC01E8 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AAD2CF1E12241D00FC01E8 /* Subject.swift */; };
 		61AAD2D21E1224C700FC01E8 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AAD2D11E1224C700FC01E8 /* Module.swift */; };
@@ -59,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		6133EBFE1DDD4EAC00EBE0C9 /* ModuleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleCollectionViewController.swift; sourceTree = "<group>"; };
+		613613C31E52BA1700211BB6 /* com.sharperapp.sharpr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = com.sharperapp.sharpr.c; sourceTree = "<group>"; };
 		6153484B1DC070430027479D /* ATKMathWidget.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ATKMathWidget.framework; path = "../../../MyScript_ATK-ios-2.2/Frameworks/ATKMathWidget.framework"; sourceTree = "<group>"; };
 		6153484D1DC070500027479D /* ATKMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ATKMath.framework; path = "../../../MyScript_ATK-ios-2.2/Frameworks/ATKMath.framework"; sourceTree = "<group>"; };
 		6153484F1DC0705C0027479D /* ATKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ATKCore.framework; path = "../../../MyScript_ATK-ios-2.2/Frameworks/ATKCore.framework"; sourceTree = "<group>"; };
@@ -89,7 +90,6 @@
 		619FC5B31E36E956002FE54D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Subject.storyboard; sourceTree = "<group>"; };
 		619FC5B81E36E9F6002FE54D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Lesson.storyboard; sourceTree = "<group>"; };
 		619FC5BA1E36F429002FE54D /* QuestionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewController.swift; sourceTree = "<group>"; };
-		619FC5BE1E370A75002FE54D /* com.sharperapp.Sharpr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = com.sharperapp.Sharpr.c; sourceTree = "<group>"; };
 		61AAD2CD1E12211400FC01E8 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		61AAD2CF1E12241D00FC01E8 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		61AAD2D11E1224C700FC01E8 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
@@ -205,7 +205,7 @@
 		61A5D3CA1DDD7B7600AD64A2 /* MyScriptATKSupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				619FC5BE1E370A75002FE54D /* com.sharperapp.Sharpr.c */,
+				613613C31E52BA1700211BB6 /* com.sharperapp.sharpr.c */,
 				61DA71911DC1B5DF006E4CBB /* MyCertificate.h */,
 				617C92011DDD73DC00314301 /* ATKIMCommonResources.bundle */,
 				615348551DC071170027479D /* resources.bundle */,
@@ -499,9 +499,9 @@
 				618C766D1DCAC57A00DE3581 /* LessonViewController.swift in Sources */,
 				617C92D51DFA4E41002D377A /* LessonTableViewController.swift in Sources */,
 				61AAD2D01E12241D00FC01E8 /* Subject.swift in Sources */,
+				613613C41E52BA1700211BB6 /* com.sharperapp.sharpr.c in Sources */,
 				61FF3D0A1DAADADE00276940 /* CanvasView.swift in Sources */,
 				61AAD2CE1E12211400FC01E8 /* Question.swift in Sources */,
-				619FC5BF1E370A75002FE54D /* com.sharperapp.Sharpr.c in Sources */,
 				61AAD2D21E1224C700FC01E8 /* Module.swift in Sources */,
 				6153485A1DC1A9A20027479D /* ViewController.m in Sources */,
 			);
@@ -678,6 +678,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6K39296T2M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -690,8 +691,10 @@
 					"-ObjC",
 					"-lstdc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sharperapp.Sharpr;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharperapp.sharpr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Sharpr/Sharpr-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -704,6 +707,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6K39296T2M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -716,8 +720,10 @@
 					"-ObjC",
 					"-lstdc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sharperapp.Sharpr;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharperapp.sharpr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Sharpr/Sharpr-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 2;
