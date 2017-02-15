@@ -1,5 +1,5 @@
 //
-//  LessonViewController.swift
+//  QuestionViewController.swift
 //  Sharpr
 //
 //  Created by Umair Sharif on 11/20/16.
@@ -8,11 +8,15 @@
 
 import UIKit
 
-class LessonViewController: UIViewController, SLTWSingleLineWidgetDelegate {
+class QuestionViewController: UIViewController, SLTWSingleLineWidgetDelegate {
     var mathView: MAWMathView?
     var singleLineView: SLTWSingleLineWidget?
     var finalText = NSAttributedString(string: "")
     @IBOutlet weak var resultTextView: UITextView!
+    @IBOutlet weak var answerField: UITextField!
+    @IBOutlet weak var decoyOneField: UITextField!
+    @IBOutlet weak var decoyTwoField: UITextField!
+    @IBOutlet weak var decoyThreeField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,19 +67,46 @@ class LessonViewController: UIViewController, SLTWSingleLineWidgetDelegate {
         resultTextView.textStorage.append(NSAttributedString(string: " "))
     }
     
-    @IBAction func doneButton(_ sender: Any) {
-        let doneAction = UIAlertController(title: "Name required", message: "Please name your lesson", preferredStyle: .alert)
+    @IBAction func saveButton(_ sender: UIButton) {
+        let doneAction = UIAlertController(title: "Name required", message: "Please name your question", preferredStyle: .alert)
         doneAction.addTextField(configurationHandler: nil)
-        doneAction.addAction(UIAlertAction(title: "Ok", style: .default,
-                                           handler: {_ in self.dismiss(animated: true,
-                                                                       completion: {self.saveLesson(name: doneAction.textFields![0].text!)})}))
+        doneAction.addAction(UIAlertAction(title: "Ok", style: .default, handler: {
+            _ in self.dismiss(animated: true, completion: {
+                let imageData = self.generateImageAsData()
+                CoreDataManager.saveQuestion(entity: "CDQuestion",
+                                             title: (doneAction.textFields?[0].text)!,
+                                             questionData: imageData,
+                                             answer: self.answerField.text!,
+                                             d1: self.decoyOneField.text!,
+                                             d2: self.decoyTwoField.text!,
+                                             d3: self.decoyThreeField.text!
+                )}
+            )}
+        ))
         doneAction.addAction(UIAlertAction(title: "Cancel", style: .cancel,
                                            handler: {_ in doneAction.dismiss(animated: true, completion: nil)}))
         
         present(doneAction, animated: true, completion: nil)
     }
     
-    func saveLesson(name: String) {
+    @IBAction func cancelButton(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    // MARK: Private fucntions
+    
+    private func generateImageAsData() -> NSData {
+        let renderer = UIGraphicsImageRenderer(size: resultTextView.bounds.size)
+        let image = renderer.image { ctx in
+            resultTextView.drawHierarchy(in: resultTextView.bounds, afterScreenUpdates: true)
+        }
+        let imageData = NSData(data: UIImageJPEGRepresentation(image, 1.0)!)
+        return imageData
+    }
+    
+    private func saveQuestion(name: String) -> String {
+        var path = ""
         let renderer = UIGraphicsImageRenderer(size: resultTextView.bounds.size)
         let image = renderer.image { ctx in
             resultTextView.drawHierarchy(in: resultTextView.bounds, afterScreenUpdates: true)
@@ -85,13 +116,12 @@ class LessonViewController: UIViewController, SLTWSingleLineWidgetDelegate {
             let filename = getDocumentsDirectory().appendingPathComponent(name)
             try? data.write(to: filename)
             print(filename)
+            path = filename.absoluteString
         }
-//        Lessons.list.append(name)
-
+        return path
     }
     
-    
-    func getDocumentsDirectory() -> URL {
+    private func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentsDirectory = paths[0]
         return documentsDirectory

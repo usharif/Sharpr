@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6133EBFF1DDD4EAC00EBE0C9 /* ModuleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6133EBFE1DDD4EAC00EBE0C9 /* ModuleCollectionViewController.swift */; };
+		612BB63E1E542DEB00931333 /* QuestionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612BB63D1E542DEB00931333 /* QuestionDetailViewController.swift */; };
 		613613C41E52BA1700211BB6 /* com.sharperapp.sharpr.c in Sources */ = {isa = PBXBuildFile; fileRef = 613613C31E52BA1700211BB6 /* com.sharperapp.sharpr.c */; };
 		6153484C1DC070430027479D /* ATKMathWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6153484B1DC070430027479D /* ATKMathWidget.framework */; };
 		6153484E1DC070500027479D /* ATKMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6153484D1DC070500027479D /* ATKMath.framework */; };
@@ -21,22 +21,16 @@
 		617C91FD1DDD574D00314301 /* ATKText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 617C91FA1DDD574D00314301 /* ATKText.framework */; };
 		617C92001DDD6C9300314301 /* SingleLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 617C91FF1DDD6C9300314301 /* SingleLineViewController.m */; };
 		617C92021DDD73DC00314301 /* ATKIMCommonResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 617C92011DDD73DC00314301 /* ATKIMCommonResources.bundle */; };
-		617C92D51DFA4E41002D377A /* LessonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617C92D41DFA4E41002D377A /* LessonTableViewController.swift */; };
-		6184FEF01DCEEB0200A101B0 /* Module.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6184FEEE1DCEEB0200A101B0 /* Module.storyboard */; };
-		6184FEF21DCEEBE600A101B0 /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6184FEF11DCEEBE600A101B0 /* Student.storyboard */; };
-		618C766D1DCAC57A00DE3581 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C766C1DCAC57A00DE3581 /* LessonViewController.swift */; };
+		618C766D1DCAC57A00DE3581 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C766C1DCAC57A00DE3581 /* QuestionViewController.swift */; };
 		6199EC9B1D90E274002CFA11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199EC9A1D90E274002CFA11 /* AppDelegate.swift */; };
 		6199ECA01D90E274002CFA11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6199EC9E1D90E274002CFA11 /* Main.storyboard */; };
 		6199ECA21D90E274002CFA11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6199ECA11D90E274002CFA11 /* Assets.xcassets */; };
 		6199ECA51D90E274002CFA11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6199ECA31D90E274002CFA11 /* LaunchScreen.storyboard */; };
-		619FC5B41E36E956002FE54D /* Subject.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619FC5B21E36E956002FE54D /* Subject.storyboard */; };
-		619FC5B91E36E9F6002FE54D /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619FC5B71E36E9F6002FE54D /* Lesson.storyboard */; };
-		619FC5BB1E36F429002FE54D /* QuestionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619FC5BA1E36F429002FE54D /* QuestionTableViewController.swift */; };
 		61AAD2CE1E12211400FC01E8 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AAD2CD1E12211400FC01E8 /* Question.swift */; };
-		61AAD2D01E12241D00FC01E8 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AAD2CF1E12241D00FC01E8 /* Subject.swift */; };
-		61AAD2D21E1224C700FC01E8 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AAD2D11E1224C700FC01E8 /* Module.swift */; };
-		61AAD2D41E13402E00FC01E8 /* MaterialRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AAD2D31E13402E00FC01E8 /* MaterialRepo.swift */; };
-		61AAD2DC1E13634100FC01E8 /* SubjectCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AAD2DB1E13634100FC01E8 /* SubjectCollectionViewController.swift */; };
+		61EEB7F51E53E8EF00D9B735 /* QuestionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EEB7F41E53E8EF00D9B735 /* QuestionTableViewController.swift */; };
+		61EEB7F71E53ECC200D9B735 /* RecordScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EEB7F61E53ECC200D9B735 /* RecordScreenViewController.swift */; };
+		61FD05FD1E53F356003DDD1B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61FD05FB1E53F356003DDD1B /* Model.xcdatamodeld */; };
+		61FD05FF1E54008B003DDD1B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FD05FE1E54008B003DDD1B /* CoreDataManager.swift */; };
 		61FF3D0A1DAADADE00276940 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF3D081DAADADE00276940 /* CanvasView.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6133EBFE1DDD4EAC00EBE0C9 /* ModuleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleCollectionViewController.swift; sourceTree = "<group>"; };
+		612BB63D1E542DEB00931333 /* QuestionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionDetailViewController.swift; sourceTree = "<group>"; };
 		613613C31E52BA1700211BB6 /* com.sharperapp.sharpr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = com.sharperapp.sharpr.c; sourceTree = "<group>"; };
 		6153484B1DC070430027479D /* ATKMathWidget.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ATKMathWidget.framework; path = "../../../MyScript_ATK-ios-2.2/Frameworks/ATKMathWidget.framework"; sourceTree = "<group>"; };
 		6153484D1DC070500027479D /* ATKMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ATKMath.framework; path = "../../../MyScript_ATK-ios-2.2/Frameworks/ATKMath.framework"; sourceTree = "<group>"; };
@@ -75,10 +69,7 @@
 		617C91FE1DDD6C9300314301 /* SingleLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLineViewController.h; sourceTree = "<group>"; };
 		617C91FF1DDD6C9300314301 /* SingleLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleLineViewController.m; sourceTree = "<group>"; };
 		617C92011DDD73DC00314301 /* ATKIMCommonResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ATKIMCommonResources.bundle; sourceTree = "<group>"; };
-		617C92D41DFA4E41002D377A /* LessonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonTableViewController.swift; sourceTree = "<group>"; };
-		6184FEEF1DCEEB0200A101B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Module.storyboard; sourceTree = "<group>"; };
-		6184FEF11DCEEBE600A101B0 /* Student.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Student.storyboard; sourceTree = "<group>"; };
-		618C766C1DCAC57A00DE3581 /* LessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
+		618C766C1DCAC57A00DE3581 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		6199EC971D90E274002CFA11 /* Sharpr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharpr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6199EC9A1D90E274002CFA11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6199EC9F1D90E274002CFA11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,15 +78,12 @@
 		6199ECA61D90E274002CFA11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6199ECAB1D90E274002CFA11 /* SharprTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharprTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6199ECB61D90E275002CFA11 /* SharprUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharprUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		619FC5B31E36E956002FE54D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Subject.storyboard; sourceTree = "<group>"; };
-		619FC5B81E36E9F6002FE54D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Lesson.storyboard; sourceTree = "<group>"; };
-		619FC5BA1E36F429002FE54D /* QuestionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewController.swift; sourceTree = "<group>"; };
 		61AAD2CD1E12211400FC01E8 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		61AAD2CF1E12241D00FC01E8 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
-		61AAD2D11E1224C700FC01E8 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
-		61AAD2D31E13402E00FC01E8 /* MaterialRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialRepo.swift; sourceTree = "<group>"; };
-		61AAD2DB1E13634100FC01E8 /* SubjectCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectCollectionViewController.swift; sourceTree = "<group>"; };
 		61DA71911DC1B5DF006E4CBB /* MyCertificate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCertificate.h; sourceTree = "<group>"; };
+		61EEB7F41E53E8EF00D9B735 /* QuestionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewController.swift; sourceTree = "<group>"; };
+		61EEB7F61E53ECC200D9B735 /* RecordScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordScreenViewController.swift; sourceTree = "<group>"; };
+		61FD05FC1E53F356003DDD1B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		61FD05FE1E54008B003DDD1B /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		61FF3D081DAADADE00276940 /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,20 +174,11 @@
 				61FF3D081DAADADE00276940 /* CanvasView.swift */,
 				6199EC9A1D90E274002CFA11 /* AppDelegate.swift */,
 				61AAD2CA1E121EB600FC01E8 /* Model */,
-				61AAD2D51E1350BF00FC01E8 /* View */,
 				61AAD2D61E1350DE00FC01E8 /* Controller */,
-				61A5D3C81DDD7A2F00AD64A2 /* Student */,
+				61AAD2D51E1350BF00FC01E8 /* View */,
 				6199ECA31D90E274002CFA11 /* LaunchScreen.storyboard */,
 			);
 			path = Sharpr;
-			sourceTree = "<group>";
-		};
-		61A5D3C81DDD7A2F00AD64A2 /* Student */ = {
-			isa = PBXGroup;
-			children = (
-				6184FEF11DCEEBE600A101B0 /* Student.storyboard */,
-			);
-			name = Student;
 			sourceTree = "<group>";
 		};
 		61A5D3CA1DDD7B7600AD64A2 /* MyScriptATKSupportingFiles */ = {
@@ -217,10 +196,9 @@
 		61AAD2CA1E121EB600FC01E8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				61AAD2D31E13402E00FC01E8 /* MaterialRepo.swift */,
-				61AAD2CF1E12241D00FC01E8 /* Subject.swift */,
-				61AAD2D11E1224C700FC01E8 /* Module.swift */,
 				61AAD2CD1E12211400FC01E8 /* Question.swift */,
+				61FD05FB1E53F356003DDD1B /* Model.xcdatamodeld */,
+				61FD05FE1E54008B003DDD1B /* CoreDataManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -229,9 +207,6 @@
 			isa = PBXGroup;
 			children = (
 				6199EC9E1D90E274002CFA11 /* Main.storyboard */,
-				619FC5B71E36E9F6002FE54D /* Lesson.storyboard */,
-				619FC5B21E36E956002FE54D /* Subject.storyboard */,
-				6184FEEE1DCEEB0200A101B0 /* Module.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -239,11 +214,10 @@
 		61AAD2D61E1350DE00FC01E8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				61AAD2DB1E13634100FC01E8 /* SubjectCollectionViewController.swift */,
-				6133EBFE1DDD4EAC00EBE0C9 /* ModuleCollectionViewController.swift */,
-				617C92D41DFA4E41002D377A /* LessonTableViewController.swift */,
-				618C766C1DCAC57A00DE3581 /* LessonViewController.swift */,
-				619FC5BA1E36F429002FE54D /* QuestionTableViewController.swift */,
+				618C766C1DCAC57A00DE3581 /* QuestionViewController.swift */,
+				61EEB7F41E53E8EF00D9B735 /* QuestionTableViewController.swift */,
+				61EEB7F61E53ECC200D9B735 /* RecordScreenViewController.swift */,
+				612BB63D1E542DEB00931333 /* QuestionDetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -363,14 +337,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				619FC5B91E36E9F6002FE54D /* Lesson.storyboard in Resources */,
 				617C92021DDD73DC00314301 /* ATKIMCommonResources.bundle in Resources */,
-				6184FEF21DCEEBE600A101B0 /* Student.storyboard in Resources */,
-				619FC5B41E36E956002FE54D /* Subject.storyboard in Resources */,
 				615348561DC071170027479D /* resources.bundle in Resources */,
 				615348541DC070DD0027479D /* ATKMathWidget.bundle in Resources */,
 				6199ECA51D90E274002CFA11 /* LaunchScreen.storyboard in Resources */,
-				6184FEF01DCEEB0200A101B0 /* Module.storyboard in Resources */,
 				6199ECA21D90E274002CFA11 /* Assets.xcassets in Resources */,
 				6199ECA01D90E274002CFA11 /* Main.storyboard in Resources */,
 			);
@@ -490,19 +460,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6133EBFF1DDD4EAC00EBE0C9 /* ModuleCollectionViewController.swift in Sources */,
-				619FC5BB1E36F429002FE54D /* QuestionTableViewController.swift in Sources */,
-				61AAD2DC1E13634100FC01E8 /* SubjectCollectionViewController.swift in Sources */,
-				61AAD2D41E13402E00FC01E8 /* MaterialRepo.swift in Sources */,
+				61FD05FF1E54008B003DDD1B /* CoreDataManager.swift in Sources */,
 				6199EC9B1D90E274002CFA11 /* AppDelegate.swift in Sources */,
 				617C92001DDD6C9300314301 /* SingleLineViewController.m in Sources */,
-				618C766D1DCAC57A00DE3581 /* LessonViewController.swift in Sources */,
-				617C92D51DFA4E41002D377A /* LessonTableViewController.swift in Sources */,
-				61AAD2D01E12241D00FC01E8 /* Subject.swift in Sources */,
+				612BB63E1E542DEB00931333 /* QuestionDetailViewController.swift in Sources */,
+				618C766D1DCAC57A00DE3581 /* QuestionViewController.swift in Sources */,
+				61EEB7F71E53ECC200D9B735 /* RecordScreenViewController.swift in Sources */,
 				613613C41E52BA1700211BB6 /* com.sharperapp.sharpr.c in Sources */,
 				61FF3D0A1DAADADE00276940 /* CanvasView.swift in Sources */,
 				61AAD2CE1E12211400FC01E8 /* Question.swift in Sources */,
-				61AAD2D21E1224C700FC01E8 /* Module.swift in Sources */,
+				61FD05FD1E53F356003DDD1B /* Model.xcdatamodeld in Sources */,
+				61EEB7F51E53E8EF00D9B735 /* QuestionTableViewController.swift in Sources */,
 				6153485A1DC1A9A20027479D /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,14 +505,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6184FEEE1DCEEB0200A101B0 /* Module.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6184FEEF1DCEEB0200A101B0 /* Base */,
-			);
-			name = Module.storyboard;
-			sourceTree = "<group>";
-		};
 		6199EC9E1D90E274002CFA11 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -559,22 +519,6 @@
 				6199ECA41D90E274002CFA11 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		619FC5B21E36E956002FE54D /* Subject.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				619FC5B31E36E956002FE54D /* Base */,
-			);
-			name = Subject.storyboard;
-			sourceTree = "<group>";
-		};
-		619FC5B71E36E9F6002FE54D /* Lesson.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				619FC5B81E36E9F6002FE54D /* Base */,
-			);
-			name = Lesson.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -824,6 +768,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		61FD05FB1E53F356003DDD1B /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				61FD05FC1E53F356003DDD1B /* Model.xcdatamodel */,
+			);
+			currentVersion = 61FD05FC1E53F356003DDD1B /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6199EC8F1D90E274002CFA11 /* Project object */;
 }
