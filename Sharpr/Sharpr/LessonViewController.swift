@@ -11,25 +11,56 @@ import UIKit
 class LessonViewController: UIViewController, SLTWSingleLineWidgetDelegate {
     var mathView: MAWMathView?
     var singleLineView: SLTWSingleLineWidget?
-    
+    var finalText = NSAttributedString(string: "")
     @IBOutlet weak var resultTextView: UITextView!
     
-    @IBAction func clearTextButton(_ sender: Any) {
-        mathView?.clear(true)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let singleLineViewChildVC = childViewControllers[0]
+        singleLineView = singleLineViewChildVC.view as! SLTWSingleLineWidget?
+        
+        let mathViewChildVC = childViewControllers[1]
+        mathView = mathViewChildVC.view as! MAWMathView?
+        
+        //sets the beautificationOption on mathView
+        mathView?.beautificationOption = .fontify
+        
+        //set the singleLineView delegate
+        singleLineView?.delegate = self
+        
+    }
+    
+    // MARK: Single Line Widget Functions
+    
+    @IBAction func clearText(_ sender: UIButton) {
         singleLineView?.clear()
     }
     
-    @IBAction func resultAsImageButton(_ sender: Any) {
-        //create and NSTextAttachment and add your image to it.
+    @IBAction func addText(_ sender: UIButton) {
+        let currText = resultTextView.attributedText!
+        let combo = NSMutableAttributedString()
+        combo.append(currText)
+        combo.append(finalText)
+        resultTextView.attributedText = combo
+        singleLineView?.clear()
+    }
+    
+    // MARK: Math Widget Functions
+    
+    @IBAction func clearEquation(_ sender: UIButton) {
+        mathView?.clear(true)
+    }
+    
+    @IBAction func addEquation(_ sender: UIButton) {
         let attachment = NSTextAttachment()
         attachment.image = mathView?.resultAsImage()
-        
-        //put your NSTextAttachment into and attributedString
         let attString = NSAttributedString(attachment: attachment)
         
-        //add this attributed string to the current position.
-        resultTextView.textStorage.insert(attString, at: resultTextView.selectedRange.length)
-        //resultTextView.textStorage.append(attString)
+        //Adding spaces on either side of the image
+        resultTextView.textStorage.append(NSAttributedString(string: " "))
+        resultTextView.textStorage.append(attString)
+        resultTextView.textStorage.append(NSAttributedString(string: " "))
     }
     
     @IBAction func doneButton(_ sender: Any) {
@@ -59,26 +90,6 @@ class LessonViewController: UIViewController, SLTWSingleLineWidgetDelegate {
 
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let singleLineViewChildVC = childViewControllers[0]
-        singleLineView = singleLineViewChildVC.view as! SLTWSingleLineWidget?
-        
-        let mathViewChildVC = childViewControllers[1]
-        mathView = mathViewChildVC.view as! MAWMathView?
-        
-        //sets the beautificationOption on mathView
-        mathView?.beautificationOption = .fontify
-        
-        //set the singleLineView delegate
-        singleLineView?.delegate = self
-        
-    }
-    
-    func singleLineWidget(_ sender: SLTWSingleLineWidget!, didChangeText text: String!, intermediate: Bool) {
-        resultTextView.text = text
-    }
     
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
@@ -88,6 +99,13 @@ class LessonViewController: UIViewController, SLTWSingleLineWidgetDelegate {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    // MARK: Single Line Widget Delegate
+    
+    func singleLineWidget(_ sender: SLTWSingleLineWidget!, didChangeText text: String!, intermediate: Bool) {
+        let attString = NSAttributedString(string: text)
+        finalText = attString
     }
     
 }

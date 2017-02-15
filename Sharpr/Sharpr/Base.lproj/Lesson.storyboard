@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -51,120 +50,101 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJV-sy-43w">
-                                <rect key="frame" x="20" y="510" width="113" height="30"/>
-                                <state key="normal" title="Clear writing bar"/>
-                                <connections>
-                                    <action selector="clearTextButton:" destination="k3S-GD-fWh" eventType="touchUpInside" id="uOj-Ji-0de"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Wm-lF-a0l">
-                                <rect key="frame" x="20" y="105" width="909" height="193"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="193" id="mYL-kX-3aj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haX-hh-E2e">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haX-hh-E2e">
                                 <rect key="frame" x="958" y="72" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="ZJG-yt-Lzt"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="doneButton:" destination="k3S-GD-fWh" eventType="touchUpInside" id="ogB-jz-Sv0"/>
                                 </connections>
                             </button>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0V6-mX-E7T">
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0V6-mX-E7T">
                                 <rect key="frame" x="520" y="548" width="504" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="8fI-GG-ZoE" kind="embed" id="pQk-fa-0u4"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ta6-RR-yP2">
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ta6-RR-yP2">
                                 <rect key="frame" x="0.0" y="548" width="512" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="srG-pV-pRC" kind="embed" id="1sV-9e-XJE"/>
                                 </connections>
                             </containerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nu5-LW-wV7">
-                                <rect key="frame" x="921" y="510" width="83" height="30"/>
-                                <state key="normal" title="Make image"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nu5-LW-wV7">
+                                <rect key="frame" x="16" y="510" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add equation"/>
                                 <connections>
-                                    <action selector="resultAsImageButton:" destination="k3S-GD-fWh" eventType="touchUpInside" id="gcY-wH-5ua"/>
+                                    <action selector="addEquation:" destination="k3S-GD-fWh" eventType="touchUpInside" id="jCZ-PQ-BVm"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correct answer here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RJ6-AI-8q6">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correct answer here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RJ6-AI-8q6">
                                 <rect key="frame" x="20" y="306" width="147" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="147" id="bjV-Jb-0cn"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Decoy answer here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ejh-8t-6rz">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Decoy answer here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ejh-8t-6rz">
                                 <rect key="frame" x="175" y="306" width="147" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="147" id="Yfm-eG-5ao"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Decoy answer here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NyG-3r-kAv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Decoy answer here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NyG-3r-kAv">
                                 <rect key="frame" x="330" y="306" width="147" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="147" id="i3n-aV-eNw"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Decoy answer here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="36B-r6-xAe">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Decoy answer here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="36B-r6-xAe">
                                 <rect key="frame" x="485" y="306" width="147" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="147" id="cZG-eg-YBy"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kdx-OG-B8p">
+                                <rect key="frame" x="20" y="110" width="931" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dcq-x8-nuS">
+                                <rect key="frame" x="946" y="510" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add text"/>
+                                <connections>
+                                    <action selector="addText:" destination="k3S-GD-fWh" eventType="touchUpInside" id="7Cv-fn-rZ5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoD-vP-xba">
+                                <rect key="frame" x="291" y="510" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clear equation"/>
+                                <connections>
+                                    <action selector="clearEquation:" destination="k3S-GD-fWh" eventType="touchUpInside" id="v6T-Rx-3HF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1s-VW-I9c">
+                                <rect key="frame" x="632" y="510" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clear text"/>
+                                <connections>
+                                    <action selector="clearText:" destination="k3S-GD-fWh" eventType="touchUpInside" id="LB6-f8-4Iv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="NyG-3r-kAv" firstAttribute="baseline" secondItem="36B-r6-xAe" secondAttribute="baseline" id="0Ue-Kd-3eb"/>
-                            <constraint firstItem="ta6-RR-yP2" firstAttribute="top" secondItem="0V6-mX-E7T" secondAttribute="top" id="2Tf-JM-KVO"/>
-                            <constraint firstItem="haX-hh-E2e" firstAttribute="top" secondItem="0dy-iw-NZ0" secondAttribute="bottom" constant="8" symbolic="YES" id="89Q-Oh-wE3"/>
-                            <constraint firstItem="RJ6-AI-8q6" firstAttribute="baseline" secondItem="ejh-8t-6rz" secondAttribute="baseline" id="Cj8-jo-gHf"/>
-                            <constraint firstItem="0V6-mX-E7T" firstAttribute="leading" secondItem="8yw-ae-Upk" secondAttribute="leading" constant="520" id="H3l-DO-Okl"/>
-                            <constraint firstItem="0V6-mX-E7T" firstAttribute="leading" secondItem="ta6-RR-yP2" secondAttribute="trailing" constant="8" symbolic="YES" id="HkT-jm-eDl"/>
-                            <constraint firstItem="36B-r6-xAe" firstAttribute="leading" secondItem="NyG-3r-kAv" secondAttribute="trailing" constant="8" symbolic="YES" id="IoT-pl-gT5"/>
-                            <constraint firstItem="ta6-RR-yP2" firstAttribute="bottom" secondItem="Mm3-mb-1F2" secondAttribute="top" id="Lhf-QX-T3w"/>
-                            <constraint firstItem="NyG-3r-kAv" firstAttribute="leading" secondItem="ejh-8t-6rz" secondAttribute="trailing" constant="8" symbolic="YES" id="NI3-uN-cnA"/>
-                            <constraint firstItem="ta6-RR-yP2" firstAttribute="top" secondItem="8yw-ae-Upk" secondAttribute="top" constant="548" id="PJ2-eB-Q7d"/>
-                            <constraint firstItem="ta6-RR-yP2" firstAttribute="leading" secondItem="8yw-ae-Upk" secondAttribute="leading" id="UVQ-hJ-O8D"/>
-                            <constraint firstItem="ejh-8t-6rz" firstAttribute="baseline" secondItem="NyG-3r-kAv" secondAttribute="baseline" id="VZZ-TK-Plm"/>
-                            <constraint firstItem="RJ6-AI-8q6" firstAttribute="top" secondItem="8Wm-lF-a0l" secondAttribute="bottom" constant="8" symbolic="YES" id="VbF-GE-Ob8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8Wm-lF-a0l" secondAttribute="trailing" constant="75" id="bEM-Zv-CW3"/>
-                            <constraint firstItem="RJ6-AI-8q6" firstAttribute="leading" secondItem="nJV-sy-43w" secondAttribute="leading" id="cgm-o4-qxt"/>
-                            <constraint firstItem="ejh-8t-6rz" firstAttribute="leading" secondItem="RJ6-AI-8q6" secondAttribute="trailing" constant="8" symbolic="YES" id="eEh-PB-NBW"/>
-                            <constraint firstItem="ta6-RR-yP2" firstAttribute="top" secondItem="nJV-sy-43w" secondAttribute="bottom" constant="8" symbolic="YES" id="eP5-Aj-73V"/>
-                            <constraint firstItem="0V6-mX-E7T" firstAttribute="bottom" secondItem="Mm3-mb-1F2" secondAttribute="top" id="erV-Jq-Vlp"/>
-                            <constraint firstAttribute="trailing" secondItem="0V6-mX-E7T" secondAttribute="trailing" id="gA4-lk-XLz"/>
-                            <constraint firstItem="8Wm-lF-a0l" firstAttribute="top" secondItem="0dy-iw-NZ0" secondAttribute="bottom" constant="41" id="gOb-lU-7Sr"/>
-                            <constraint firstItem="haX-hh-E2e" firstAttribute="trailing" secondItem="Nu5-LW-wV7" secondAttribute="trailing" id="kAU-1R-GN3"/>
-                            <constraint firstItem="8Wm-lF-a0l" firstAttribute="leading" secondItem="RJ6-AI-8q6" secondAttribute="leading" id="keE-gO-feY"/>
-                            <constraint firstItem="8Wm-lF-a0l" firstAttribute="leading" secondItem="8yw-ae-Upk" secondAttribute="leadingMargin" id="kij-DI-zZu"/>
-                            <constraint firstItem="nJV-sy-43w" firstAttribute="baseline" secondItem="Nu5-LW-wV7" secondAttribute="baseline" id="nAu-fU-XUf"/>
-                            <constraint firstItem="haX-hh-E2e" firstAttribute="trailing" secondItem="8yw-ae-Upk" secondAttribute="trailingMargin" id="qba-ob-JBa"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="dJy-dm-ViR"/>
                     <connections>
-                        <outlet property="resultTextView" destination="8Wm-lF-a0l" id="LXP-Rf-FkF"/>
+                        <outlet property="resultTextView" destination="kdx-OG-B8p" id="79x-AY-eRl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hyy-se-Rbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
