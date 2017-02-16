@@ -10,36 +10,54 @@ import UIKit
 import ReplayKit
 
 class RecordScreenViewController: UIViewController {
+    @IBOutlet weak var canvasView: CanvasView!
+    @IBOutlet weak var questionImage: UIImageView!
+    var isRecording : Bool = false
+    
+    var passedInImage = UIImage()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //recButton.titleLabel?.text = "Start Recording"
+        canvasView.clearCanvas(false)
+        questionImage.image = passedInImage
+        isRecording = false
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBOutlet weak var recButton: UIButton!
     
     @available(iOS, deprecated: 9.0)
     @IBAction func startRec(_ sender: UIButton) {
-        recButton.titleLabel?.text = "Stop Recording"
-        let recorder = RPScreenRecorder.shared()
-        recorder.startRecording(withMicrophoneEnabled: true, handler: nil)
-    }
-    
-    @IBAction func endRec(_ sender: UIButton) {
-        recButton.titleLabel?.text = "Start Recording"
-        let recorder = RPScreenRecorder.shared()
-        recorder.stopRecording { (preview, error) in
-            preview?.popoverPresentationController?.sourceView = self.view
-            self.present(preview!, animated: true)
+        if !isRecording {
+            sender.setTitle("Stop", for: .normal)
+            let recorder = RPScreenRecorder.shared()
+            recorder.startRecording(withMicrophoneEnabled: true, handler: nil)
+            isRecording = true
+        } else {
+            sender.setTitle("Start Recording", for: .normal)
+            let recorder = RPScreenRecorder.shared()
+            recorder.stopRecording { (preview, error) in
+                preview?.popoverPresentationController?.sourceView = self.view
+                self.present(preview!, animated: true)
+            }
+            isRecording = false
         }
     }
     
-
+    @IBAction func cancelButton(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
+    @IBAction func clearButton(_ sender: UIButton) {
+        canvasView.clearCanvas(true)
+    }
+    
+    // Shake to clear screen
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        canvasView.clearCanvas(true)
+    }
 
     /*
     // MARK: - Navigation

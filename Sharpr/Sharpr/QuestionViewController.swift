@@ -33,6 +33,29 @@ class QuestionViewController: UIViewController, SLTWSingleLineWidgetDelegate {
         //set the singleLineView delegate
         singleLineView?.delegate = self
         
+        answerField.layer.borderWidth = 1
+        answerField.layer.cornerRadius = 5
+        answerField.layer.masksToBounds = true
+        answerField.layer.borderColor = UIColor.green.cgColor
+        
+        decoyOneField.layer.borderWidth = 1
+        decoyOneField.layer.cornerRadius = 5
+        decoyOneField.layer.masksToBounds = true
+        decoyOneField.layer.borderColor = UIColor.red.cgColor
+        
+        decoyTwoField.layer.borderWidth = 1
+        decoyTwoField.layer.cornerRadius = 5
+        decoyTwoField.layer.masksToBounds = true
+        decoyTwoField.layer.borderColor = UIColor.red.cgColor
+        
+        decoyThreeField.layer.borderWidth = 1
+        decoyThreeField.layer.cornerRadius = 5
+        decoyThreeField.layer.masksToBounds = true
+        decoyThreeField.layer.borderColor = UIColor.red.cgColor
+        
+//        textField.layer.borderWidth = 1
+//        textField.layer.borderColor = UIColor.whiteColor().CGColor
+        
     }
     
     // MARK: Single Line Widget Functions

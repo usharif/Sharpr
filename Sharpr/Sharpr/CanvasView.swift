@@ -12,12 +12,12 @@ let π = CGFloat(M_PI)
 
 class CanvasView: UIImageView {
     
-    private let forceSensitivity: CGFloat = 3.0
+    private let forceSensitivity: CGFloat = 4.0
     
     // Parameters
     fileprivate let defaultLineWidth:CGFloat = 6
     
-    fileprivate var drawColor: UIColor = UIColor.red
+    fileprivate var drawColor: UIColor = UIColor.black
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else { return }

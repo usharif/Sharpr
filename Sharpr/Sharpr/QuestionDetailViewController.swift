@@ -16,6 +16,7 @@ class QuestionDetailViewController: UIViewController {
     @IBOutlet weak var decoyOneLabel: UILabel!
     @IBOutlet weak var decoyTwoLabel: UILabel!
     @IBOutlet weak var decoyThreeLabel: UILabel!
+    var imageToPass = UIImage()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class QuestionDetailViewController: UIViewController {
         let data = questionObject.value(forKey: "questionData") as! Data
         let image = UIImage(data: data)
         questionImageView.image = image
+        imageToPass = image!
         
         let answer = questionObject.value(forKey: "answerString") as! String
         answerLabel.text = answer
@@ -41,14 +43,17 @@ class QuestionDetailViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "recordScreen" {
+            if let destinationVC = segue.destination as? RecordScreenViewController {
+                destinationVC.passedInImage = self.imageToPass
+            }
+        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
 
 }

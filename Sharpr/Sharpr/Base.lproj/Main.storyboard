@@ -43,7 +43,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cqt-fH-9kJ" id="8nX-r4-6fi">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -291,28 +291,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okZ-f7-Ypj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wdM-OU-2Sa">
+                                <rect key="frame" x="20" y="147.5" width="984" height="207.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jwE-Ds-eWm" customClass="CanvasView" customModule="Sharpr" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="66" width="1024" height="702"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hkj-8t-GjR">
+                                <rect key="frame" x="20" y="28" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelButton:" destination="2da-zw-Oa4" eventType="touchUpInside" id="avB-iD-iI9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shake to clear or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zI3-NJ-3tg">
+                                <rect key="frame" x="404" y="33" width="129" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MD-3e-rAE">
+                                <rect key="frame" x="541" y="26.5" width="70" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Tap Here"/>
+                                <connections>
+                                    <action selector="clearButton:" destination="2da-zw-Oa4" eventType="touchUpInside" id="AB7-jc-S0P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vn-4w-EOD">
                                 <rect key="frame" x="896" y="28" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Recording"/>
                                 <connections>
-                                    <action selector="endRec:" destination="2da-zw-Oa4" eventType="touchUpInside" id="DSa-N3-kKw"/>
-                                    <action selector="startRec:" destination="2da-zw-Oa4" eventType="touchUpInside" id="Enz-54-LEL"/>
+                                    <action selector="startRec:" destination="2da-zw-Oa4" eventType="touchUpInside" id="9Iy-RA-Mr2"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="okZ-f7-Ypj" firstAttribute="top" secondItem="aXc-Ks-Pyh" secondAttribute="bottom" constant="8" symbolic="YES" id="BZE-Mx-fuX"/>
-                            <constraint firstItem="okZ-f7-Ypj" firstAttribute="trailing" secondItem="IRf-ke-xqd" secondAttribute="trailingMargin" id="k3r-wo-erg"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="recButton" destination="okZ-f7-Ypj" id="mpi-zn-JtC"/>
+                        <outlet property="canvasView" destination="jwE-Ds-eWm" id="pGt-PS-IVi"/>
+                        <outlet property="questionImage" destination="wdM-OU-2Sa" id="PlK-Qt-6wc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lWh-t1-Kt5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="645" y="-885"/>
+            <point key="canvasLocation" x="1413.8671875" y="562.5"/>
         </scene>
         <!--Single Line View Controller-->
         <scene sceneID="B6g-yF-OEM">
@@ -384,6 +413,14 @@
                                 <color key="textColor" red="0.85490196080000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIy-mF-n0f">
+                                <rect key="frame" x="897" y="72" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Record solution"/>
+                                <connections>
+                                    <segue destination="2da-zw-Oa4" kind="presentation" identifier="recordScreen" id="9ls-lQ-Vxn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -423,7 +460,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g5x-fV-esr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Questions" id="dkT-dH-a2g"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hbW-UD-cqj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="hbW-UD-cqj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
