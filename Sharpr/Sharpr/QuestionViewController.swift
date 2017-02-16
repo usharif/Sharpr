@@ -68,6 +68,7 @@ class QuestionViewController: UIViewController, SLTWSingleLineWidgetDelegate {
     }
     
     @IBAction func saveButton(_ sender: UIButton) {
+        view.endEditing(true) // DO NOT REMOVE. This is done to close keyboard, so the right context can be given to create image from resultTextView
         let doneAction = UIAlertController(title: "Name required", message: "Please name your question", preferredStyle: .alert)
         doneAction.addTextField(configurationHandler: nil)
         doneAction.addAction(UIAlertAction(title: "Ok", style: .default, handler: {
@@ -97,11 +98,19 @@ class QuestionViewController: UIViewController, SLTWSingleLineWidgetDelegate {
     // MARK: Private fucntions
     
     private func generateImageAsData() -> NSData {
-        let renderer = UIGraphicsImageRenderer(size: resultTextView.bounds.size)
-        let image = renderer.image { ctx in
-            resultTextView.drawHierarchy(in: resultTextView.bounds, afterScreenUpdates: true)
-        }
-        let imageData = NSData(data: UIImageJPEGRepresentation(image, 1.0)!)
+//        let renderer = UIGraphicsImageRenderer(size: resultTextView.bounds.size)
+//        let image = renderer.image { ctx in
+//            resultTextView.drawHierarchy(in: resultTextView.bounds, afterScreenUpdates: true)
+//        }
+//        let imageData = NSData(data: UIImageJPEGRepresentation(image, 1.0)!)
+//        return imageData
+        
+        var image: UIImage? = nil
+        UIGraphicsBeginImageContextWithOptions(resultTextView.bounds.size, resultTextView.isOpaque, 0.0)
+        resultTextView.layer.render(in: UIGraphicsGetCurrentContext()!)
+        image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        let imageData = NSData(data: UIImageJPEGRepresentation(image!, 1.0)!)
         return imageData
     }
     
